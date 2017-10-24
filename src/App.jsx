@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { MuiThemeProvider } from 'material-ui';
 
 import './App.css';
 import Router from './router';
@@ -7,11 +8,11 @@ import Layout from './components/layout/Layout';
 class App extends Component {
   render() {
     return (
-      <div className="App">
+      <MuiThemeProvider>
         <Layout>
           <Router />
         </Layout>
-      </div>
+      </MuiThemeProvider>
     );
   }
 }
