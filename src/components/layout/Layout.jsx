@@ -7,18 +7,16 @@ export default class Layout extends Component {
   render() {
     return (
       <div className="layout">
-        <header>
+        <header className="header">
           <AppBar
             title="tlmader.github.io"
             showMenuIconButton={false}
           />
         </header>
         <div className="body">
-          <nav className="nav">nav</nav>
-          <main className="content">{this.props.children}</main>
-          <aside className="aside">aside</aside>
+          <main className="body__content">{this.props.children}</main>
         </div>
-        <footer>footer</footer>
+        <footer className="footer">footer</footer>
       </div>
     );
   }
