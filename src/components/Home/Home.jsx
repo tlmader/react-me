@@ -1,9 +1,13 @@
 import React, { Component } from 'react';
-import { GridList, GridTile, IconButton, Subheader } from 'material-ui';
+import { Drawer, GridList, GridTile, MenuItem, RaisedButton, Subheader } from 'material-ui';
 
 import './Home.css';
 
 export default class Home extends Component {
+  constructor(props) {
+    super(props);
+  }
+
   render() {
     return (
       <div className="home">
@@ -11,7 +15,7 @@ export default class Home extends Component {
           className="grid"
           cellHeight={180}
           cols={3}
-          padding={64}>
+          padding={32}>
           <Subheader>Click an item to learn more!</Subheader>
           {tilesData.map((tile) => (
             <GridTile
@@ -28,18 +32,17 @@ export default class Home extends Component {
 
 const tilesData = [
   {
-    img: 'images/grid-list/00-52-29-429_640.jpg',
-    title: 'Breakfast',
-    author: 'jill111',
+    img: 'images/honest-abe.png',
+    title: 'Honest Abe'
   },
   {
-    img: 'images/grid-list/burger-827309_640.jpg',
-    title: 'Tasty burger',
-    author: 'pashminu',
+    img: 'images/use-of-force.png',
+    title: 'Use of Force Simulation',
+    author: 'pashminu'
   },
   {
-    img: 'images/grid-list/camera-813814_640.jpg',
-    title: 'Camera',
+    img: 'images/theodoric.jpg',
+    title: 'Theodoric',
     author: 'Danson67',
   },
   {
