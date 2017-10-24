@@ -3,7 +3,7 @@ import { MuiThemeProvider } from 'material-ui';
 
 import './App.css';
 import Router from './router';
-import Layout from './components/layout/Layout';
+import Layout from './components/Layout/Layout';
 
 class App extends Component {
   render() {

@@ -16,7 +16,9 @@ export default class Layout extends Component {
         <div className="body">
           <main className="body__content">{this.props.children}</main>
         </div>
-        <footer className="footer">footer</footer>
+        <footer className="footer">
+          <p>Handcrafted with love by Ted Mader.</p>
+        </footer>
       </div>
     );
   }
