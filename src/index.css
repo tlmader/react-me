@@ -6,7 +6,7 @@ body {
 }
 
 :root {
-    --space: 1.5em;
-    --space-lg: 2em;
+    --space: 1rem;
+    --space-xs: 0.25rem;
     --bg-color: hsl(150, 45%, 50%);
 }

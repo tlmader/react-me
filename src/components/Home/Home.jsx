@@ -24,8 +24,8 @@ export default class Home extends Component {
       });
     } else if (window.innerWidth < 960) {
       this.setState({
-        cols: 2,
-        padding: 32
+        cols: 3,
+        padding: 16
       });
     } else {
       this.setState({

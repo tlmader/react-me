@@ -36,11 +36,23 @@
 .body {
     display: flex;
     justify-content: center;
-    padding: var(--space);
 }
 
 .body__content {
     flex: 1;
     max-width: 960px;
     background: rgba(147, 128, 108, 0.1);
+    padding: var(--space);
+}
+
+@media (min-width: 960px) {
+    .body {
+        padding: var(--space);
+    }
+}
+
+@media (max-width: 600px) {
+    .body__content {
+        padding: var(--space-xs);
+    }
 }
