@@ -1,5 +1,6 @@
 .home {
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-around;
 }
@@ -9,4 +10,17 @@
     object-fit: cover;
     overflow: hidden;
     overflow-y: auto;
+    padding: var(--space-xs);
+}
+
+@media (min-width: 600px) {
+    .grid {
+        padding: var(--space-sm)
+    }
+}
+
+@media (min-width: 960px) {
+    .grid {
+        padding: var(--space)
+    }
 }

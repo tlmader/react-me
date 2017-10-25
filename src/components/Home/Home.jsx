@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { GridList, GridTile, MenuItem, Subheader } from 'material-ui';
+import { Card, CardActions, CardHeader, CardText, Divider, FlatButton, GridList, GridTile, MenuItem, Subheader } from 'material-ui';
 
 import './Home.css';
 
@@ -58,7 +58,6 @@ export default class Home extends Component {
           cellHeight={180}
           cols={this.state.cols}
           padding={this.state.padding}>
-          <Subheader>Click an item to learn more!</Subheader>
           {tilesData.map((tile) => (
             <GridTile
               key={tile.img}

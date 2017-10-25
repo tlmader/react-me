@@ -13,7 +13,6 @@
     flex-direction: column;
 }
 
-.header,
 .footer {
     flex: none;
 }
@@ -23,13 +22,11 @@
     box-sizing: border-box;
     padding: 72px 24px 72px 24px;
     text-align: center;
-    background-color: rgb(33, 33, 33);
 }
 
 .footer p {
     margin: 0 auto;
     padding: 0;
-    color: rgba(255, 255, 255, 0.541176);
     max-width: 356px;
 }
 
@@ -42,17 +39,4 @@
     flex: 1;
     max-width: 960px;
     background: rgba(147, 128, 108, 0.1);
-    padding: var(--space);
-}
-
-@media (min-width: 960px) {
-    .body {
-        padding: var(--space);
-    }
-}
-
-@media (max-width: 600px) {
-    .body__content {
-        padding: var(--space-xs);
-    }
 }
