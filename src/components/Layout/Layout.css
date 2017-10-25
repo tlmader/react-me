@@ -41,7 +41,6 @@
 
 .body__content {
     flex: 1;
-    max-width: 1024px;
-    padding: var(--space);
+    max-width: 960px;
     background: rgba(147, 128, 108, 0.1);
 }

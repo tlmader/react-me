@@ -1,11 +1,53 @@
 import React, { Component } from 'react';
-import { Drawer, GridList, GridTile, MenuItem, RaisedButton, Subheader } from 'material-ui';
+import { GridList, GridTile, MenuItem, Subheader } from 'material-ui';
 
 import './Home.css';
 
 export default class Home extends Component {
-  constructor(props) {
-    super(props);
+
+  constructor() {
+    super();
+    this.state = {
+      cols: 3,
+      padding: 32
+    }
+  }
+
+  /**
+   * Calculate & Update state of new dimensions
+   */
+  updateCols() {
+    if (window.innerWidth < 600) {
+      this.setState({
+        cols: 2,
+        padding: 4
+      });
+    } else if (window.innerWidth < 960) {
+      this.setState({
+        cols: 2,
+        padding: 32
+      });
+    } else {
+      this.setState({
+        cols: 3,
+        padding: 32
+      });
+    }
+  }
+
+  /**
+   * Add event listener
+   */
+  componentDidMount() {
+    this.updateCols();
+    window.addEventListener("resize", this.updateCols.bind(this));
+  }
+
+  /**
+   * Remove event listener
+   */
+  componentWillUnmount() {
+    window.removeEventListener("resize", this.updateCols.bind(this));
   }
 
   render() {
@@ -14,8 +56,8 @@ export default class Home extends Component {
         <GridList
           className="grid"
           cellHeight={180}
-          cols={3}
-          padding={32}>
+          cols={this.state.cols}
+          padding={this.state.padding}>
           <Subheader>Click an item to learn more!</Subheader>
           {tilesData.map((tile) => (
             <GridTile
