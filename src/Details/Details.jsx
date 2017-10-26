@@ -5,7 +5,7 @@ import './Details.css';
 
 export default class Details extends Component {
   render() {
-    return this.props.data
+    return this.props.tile
       ? (
         <Paper
           className="details"
@@ -19,9 +19,22 @@ export default class Details extends Component {
               </IconButton>
             </div>
           </div>
-          <h1>
-            {this.props.data.title}
-          </h1>
+          <div className="details-body">
+            <div className="details-body__item">
+              <h1>
+                {this.props.tile.title}
+              </h1>
+              <p>
+                {this.props.tile.description}
+              </p>
+            </div>
+            <div className="details-body__item">
+              <div className="details-body__image-container">
+                <img src={this.props.tile.image}
+                     alt="tile"/>
+              </div>
+            </div>
+          </div>
         </Paper>
       )
       : null;

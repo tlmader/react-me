@@ -74,7 +74,7 @@ export default class Home extends Component {
       <div className="home">
         <Details
           close={this.closeDetails}
-          data={this.state.selectedTile}/>
+          tile={this.state.selectedTile}/>
         <div className="grid">
           <GridList
             cellHeight={180}

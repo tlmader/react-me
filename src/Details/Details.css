@@ -1,5 +1,5 @@
 .details {
-    padding: var(--space-sm)
+    padding: var(--space-sm);
 }
 
 .details-header {
@@ -9,4 +9,24 @@
 
 .details-header__item {
     flex: 0 1 auto;
+}
+
+.details-body {
+    display: flex;
+    justify-content: center;
+}
+
+.details-body__item {
+    max-width: 512px;
+    flex: 1;
+}
+
+.details-body__image-container {
+    width: 418px;
+    height: 240px;
+    overflow: hidden;
+}
+
+.details-body__image-container img {
+    width: 100%;
 }
