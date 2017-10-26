@@ -7,7 +7,7 @@ const data = [
     sections: [
       {
         name: 'Built With',
-        content: [
+        items: [
           'Unity3D',
           '3ds Max',
           'Inkscape',
@@ -19,7 +19,7 @@ const data = [
       },
       {
         name: 'Role',
-        content: [
+        items: [
           'Programming',
           'Development Lead'
         ]

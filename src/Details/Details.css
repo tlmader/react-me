@@ -1,5 +1,25 @@
 .details {
-    padding: var(--space-sm);
+}
+
+.title,
+.section-name {
+    margin-bottom: 0;
+    font-weight: lighter;
+}
+
+.section-name {
+    margin-bottom: 0.75rem;
+}
+
+.description {
+    margin-top: 0.5rem;
+    margin-bottom: 2rem;
+}
+
+.divider {
+    height: 0.75rem;
+    width: 3rem;
+    border-top: 0.2rem solid cornflowerblue;
 }
 
 .details-header {
@@ -19,15 +39,27 @@
 .details-body__item {
     max-width: 512px;
     flex: 1;
-    padding: 0 1rem;
+    padding: 0 2rem;
+    margin-bottom: 4rem;
 }
 
 .details-body__image-container {
-    width: 418px;
-    height: 240px;
+    display: flex;
+    align-items: center;
+    width: 512px;
+    height: 384px;
     overflow: hidden;
 }
 
 .details-body__image-container img {
     width: 100%;
+}
+
+.chip-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.chip-wrapper__chip {
+    margin: 0.25rem;
 }
