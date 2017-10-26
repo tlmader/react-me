@@ -1,13 +1,15 @@
 .home {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
+    background: rgba(147, 128, 108, 0.1);
+}
+
+.card {
+
 }
 
 .grid {
-    flex: 1;
-    object-fit: cover;
+    margin: auto;
+    max-width: 960px;
     overflow: hidden;
     overflow-y: auto;
     padding: var(--space-xs);
