@@ -5,7 +5,7 @@ import './Details.css';
 
 export default class Details extends Component {
   render() {
-    return this.props.show
+    return this.props.data
       ? (
         <Paper
           className="details"
@@ -20,7 +20,7 @@ export default class Details extends Component {
             </div>
           </div>
           <h1>
-            Test
+            {this.props.data.title}
           </h1>
         </Paper>
       )

@@ -1,29 +1,34 @@
 import React, { Component } from 'react';
-import { Card, CardHeader, FontIcon, GridList, GridTile, IconButton, Paper } from 'material-ui';
+import { GridList, GridTile, IconButton, Subheader } from 'material-ui';
 
 import './Home.css';
 import tilesData from '../data';
 import Details from '../Details/Details';
-import { grey50 } from 'material-ui/styles/colors';
 
 export default class Home extends Component {
 
   constructor() {
     super();
     this.state = {
-      showDetails: true,
       cols: 3,
       padding: 32,
-      selectedTile: null
+      selectedTile: tilesData[0]
     };
 
     // Bind the this context to the handler function
     this.closeDetails = this.closeDetails.bind(this);
+    this.selectTile = this.selectTile.bind(this);
   }
 
   closeDetails() {
     this.setState({
-      showDetails: false
+      selectedTile: null
+    });
+  }
+
+  selectTile(tile) {
+    this.setState({
+      selectedTile: tile
     });
   }
 
@@ -68,9 +73,8 @@ export default class Home extends Component {
     return (
       <div className="home">
         <Details
-          show={this.state.showDetails}
           close={this.closeDetails}
-          data={this.selectedTile}/>
+          data={this.state.selectedTile}/>
         <div className="grid">
           <GridList
             cellHeight={180}
@@ -80,15 +84,10 @@ export default class Home extends Component {
               <GridTile
                 key={tile.title}
                 title={tile.title}
-                actionIcon={
-                  <IconButton
-                    iconStyle={{color: 'white'}}
-                    iconClassName="material-icons"
-                    onClick={this.closeDetails}>
-                    info_outline
-                  </IconButton>
-                }>
-                <img src={tile.image}/>
+                titleBackground="linear-gradient(to top, rgba(0,0,0,0.7) 0%,rgba(0,0,0,0.3) 70%,rgba(0,0,0,0) 100%)">
+                <img src={tile.image}
+                     alt="tile"
+                     onClick={() => this.selectTile(tile)}/>
               </GridTile>
             ))}
           </GridList>

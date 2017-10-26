@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { AppBar, Avatar } from 'material-ui';
+import { Avatar } from 'material-ui';
 
 import './Header.css';
 
