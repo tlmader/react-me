@@ -19,6 +19,7 @@
 .details-body__item {
     max-width: 512px;
     flex: 1;
+    padding: 0 1rem;
 }
 
 .details-body__image-container {
