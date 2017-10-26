@@ -23,24 +23,27 @@ const data = [
           'Programming',
           'Development Lead'
         ]
-      }
-    ],
-    links: [
-      {
-        text: 'Windows desktop 64-bit',
-        url: 'https://build.cloud.unity3d.com/share/ZkMWaNQDf-/'
       },
       {
-        text: 'Mac desktop 64-bit',
-        url: 'https://build.cloud.unity3d.com/share/ZkMWaNQDf-/'
-      },
-      {
-        text: 'Campus News Article!',
-        url: 'http://www.uno.edu/campus-news/2016/Game-On-UNO-Video-Game-Development-Concentration-Simulates-Real-World-Experience.aspx'
-      },
-      {
-        text: 'Source',
-        url: 'https://github.com/uno-game-dev/honest-abe'
+        name: 'links',
+        links: [
+          {
+            text: 'Windows desktop 64-bit',
+            url: 'https://build.cloud.unity3d.com/share/ZkMWaNQDf-/'
+          },
+          {
+            text: 'Mac desktop 64-bit',
+            url: 'https://build.cloud.unity3d.com/share/ZkMWaNQDf-/'
+          },
+          {
+            text: 'Campus News Article!',
+            url: 'http://www.uno.edu/campus-news/2016/Game-On-UNO-Video-Game-Development-Concentration-Simulates-Real-World-Experience.aspx'
+          },
+          {
+            text: 'Source',
+            url: 'https://github.com/uno-game-dev/honest-abe'
+          }
+        ]
       }
     ]
   },
