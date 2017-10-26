@@ -46,6 +46,18 @@ export default class Details extends Component {
                             </div>
                           ))
                         }
+                        {
+                          section.links.map(link => (
+                            <div
+                              className="chip-wrapper__chip"
+                              key={link.text}>
+                              <a
+                                href={link.url}>
+                                {link.text}
+                              </a> |
+                            </div>
+                          ))
+                        }
                       </div>
                     </div>
                   )

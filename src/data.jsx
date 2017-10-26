@@ -15,17 +15,20 @@ const data = [
           'Ableton',
           'Komplete',
           'Behaviour Machine'
-        ]
+        ],
+        links: []
       },
       {
         name: 'Role',
         items: [
           'Programming',
           'Development Lead'
-        ]
+        ],
+        links: []
       },
       {
-        name: 'links',
+        name: 'Links',
+        items: [],
         links: [
           {
             text: 'Windows desktop 64-bit',
