@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Chip, Divider, IconButton, Paper } from 'material-ui';
+import { Chip, Divider, IconButton, Paper, Subheader } from 'material-ui';
 
 import './Details.css';
 
@@ -61,6 +61,10 @@ export default class Details extends Component {
           </div>
         </Paper>
       )
-      : null;
+      : (
+        <div className="hidden-container">
+          <Subheader className="hidden-container__item">Click a tile to learn more.</Subheader>
+        </div>
+      );
   }
 }

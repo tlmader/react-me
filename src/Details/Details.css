@@ -1,6 +1,16 @@
 .details {
 }
 
+.hidden-container {
+    display: flex;
+    justify-content: center;
+}
+
+.hidden-container__item {
+    flex: 1;
+    max-width: 1000px;
+}
+
 .title,
 .section-name {
     margin-bottom: 0;
