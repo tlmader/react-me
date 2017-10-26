@@ -10,10 +10,20 @@ export default class Home extends Component {
   constructor() {
     super();
     this.state = {
-      showDetails: false,
+      showDetails: true,
       cols: 3,
-      padding: 32
+      padding: 32,
+      selectedTile: null
     };
+
+    // Bind the this context to the handler function
+    this.closeDetails = this.closeDetails.bind(this);
+  }
+
+  closeDetails() {
+    this.setState({
+      showDetails: false
+    });
   }
 
   /**
@@ -28,12 +38,12 @@ export default class Home extends Component {
     } else if (window.innerWidth < 960) {
       this.setState({
         cols: 3,
-        padding: 16
+        padding: 32
       });
     } else {
       this.setState({
         cols: 3,
-        padding: 32
+        padding: 64
       });
     }
   }
@@ -58,7 +68,8 @@ export default class Home extends Component {
       <div className="home">
         <Details
           show={this.state.showDetails}
-        />
+          close={this.closeDetails}
+          data={this.selectedTile}/>
         <div className="grid">
           <GridList
             cellHeight={180}

@@ -1,18 +1,28 @@
 import React, { Component } from 'react';
-import { Card, CardHeader } from 'material-ui';
+import { IconButton, Paper } from 'material-ui';
+
+import './Details.css';
 
 export default class Details extends Component {
   render() {
     return this.props.show
       ? (
-        <Card className="card">
-          <CardHeader
-            title="Without Avatar"
-            subtitle="Subtitle"
-            actAsExpander={false}
-            showExpandableButton={true}
-          />
-        </Card>
+        <Paper
+          className="details"
+          rounded={false}>
+          <div className="details-header">
+            <div className="details-header__item">
+              <IconButton
+                iconClassName="material-icons"
+                onClick={this.props.close}>
+                close
+              </IconButton>
+            </div>
+          </div>
+          <h1>
+            Test
+          </h1>
+        </Paper>
       )
       : null;
   }

@@ -9,8 +9,7 @@ export default class Header extends Component {
       <div className="header">
         <Avatar
           src="images/avatar.jpg"
-          size={128}
-        />
+          size={128}/>
         <h3>Ted Mader</h3>
         <p>Web Developer • Gamer • Design Hobbyist</p>
       </div>

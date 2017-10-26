@@ -1,0 +1,12 @@
+.details {
+    padding: var(--space-sm)
+}
+
+.details-header {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.details-header__item {
+    flex: 0 1 auto;
+}
