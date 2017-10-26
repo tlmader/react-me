@@ -4,6 +4,7 @@ import { Card, CardHeader, FontIcon, GridList, GridTile, IconButton, Paper } fro
 import './Home.css';
 import tilesData from '../data';
 import Details from '../Details/Details';
+import { grey50 } from 'material-ui/styles/colors';
 
 export default class Home extends Component {
 
@@ -78,7 +79,15 @@ export default class Home extends Component {
             {tilesData.map((tile) => (
               <GridTile
                 key={tile.title}
-                title={tile.title}>
+                title={tile.title}
+                actionIcon={
+                  <IconButton
+                    iconStyle={{color: 'white'}}
+                    iconClassName="material-icons"
+                    onClick={this.closeDetails}>
+                    info_outline
+                  </IconButton>
+                }>
                 <img src={tile.image}/>
               </GridTile>
             ))}
