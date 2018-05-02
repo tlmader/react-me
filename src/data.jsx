@@ -103,12 +103,12 @@ const data = [
         name: 'Links',
         links: [
           {
-            label: 'Windows desktop 64-bit',
+            label: 'Download for Windows',
             url: 'https://build.cloud.unity3d.com/share/ZkMWaNQDf-/'
           },
           {
-            label: 'Mac desktop 64-bit',
-            url: 'https://build.cloud.unity3d.com/share/ZkMWaNQDf-/'
+            label: 'Download for Mac',
+            url: 'https://developer.cloud.unity3d.com/share/bybTp4mvMW/'
           },
           {
             label: 'Campus News Article!',
