@@ -23,6 +23,7 @@ export default class Home extends Component {
   }
 
   selectTile(tile) {
+    this.refs.details.scrollIntoView();
     this.setState({
       selectedTile: tile
     });
@@ -30,7 +31,7 @@ export default class Home extends Component {
 
   render() {
     return (
-      <div className="home">
+      <div className="home" ref="details">
         <Details
           close={this.closeDetails}
           tile={this.state.selectedTile}
