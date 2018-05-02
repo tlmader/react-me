@@ -12,21 +12,23 @@ export default class Grid extends Component {
 
   render() {
     return (
-      <div className="grid">
-        {tilesData.map((tile) => (
-          <Card
-            className="card"
-            key={tile.title}
-            onClick={() => this.props.selectTile(tile)}
-          >
-            <CardMedia
-              className="card__media"
-              overlay={<CardTitle title={tile.title} />}
+      <div className="container">
+        <div className="grid">
+          {tilesData.map((tile) => (
+            <Card
+              className="card"
+              key={tile.title}
+              onClick={() => this.props.selectTile(tile)}
             >
-              <img src={tile.thumb} alt="tile" />
-            </CardMedia>
-          </Card>
-        ))}
+              <CardMedia
+                className="card__media"
+                overlay={<CardTitle title={tile.title} />}
+              >
+                <img src={tile.thumb ? tile.thumb : 'images/no-thumb.png'} alt="tile" />
+              </CardMedia>
+            </Card>
+          ))}
+        </div>
       </div>
     );
   }

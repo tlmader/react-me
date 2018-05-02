@@ -42,8 +42,8 @@ const data = [
   {
     title: 'Integrating Virtual Reality with Use-of-Force Training Simulations',
     description: 'A highly immersive, interactive training simulation, intended to train police officers in use-of-force when resolving a potentially dangerous situation. Senior honors thesis project and "Outstanding Honors Research Award" recipient.',
-    image: 'images/use-of-force.png',
-    thumb: 'images/use-of-force-thumb.png',
+    image: 'images/police-use-of-force.gif',
+    thumb: 'images/police-use-of-force-thumb.gif',
     sections: [
       {
         name: 'Built With',
@@ -125,8 +125,8 @@ const data = [
   {
     title: 'Theodoric',
     description: 'A 2D top-down action RPG. Gather gold and slay monsters to achieve the highest score possible!',
-    image: 'images/theodoric.jpg',
-    thumb: 'images/theodoric-thumb.jpg',
+    image: 'images/theodoric.gif',
+    thumb: 'images/theodoric-thumb.gif',
     sections: [
       {
         name: 'Built With',
@@ -147,82 +147,87 @@ const data = [
       }
     ],
   },
-  // {
-  //   title: 'Chess Bot',
-  //   description: 'This project provides a model of the state space of chess and a simple chess-playing bot that explores that space efficiently and decides what moves to make to defeat other bots. This uses a chess framework and tests against bots by Stephen G. Ware.',
-  //   image: null,
-  //   sections: [
-  //     {
-  //       name: 'Built With',
-  //       items: [
-  //         'Java'
-  //       ]
-  //     },
-  //     {
-  //       name: 'Links',
-  //       links: [
-  //         {
-  //           label: 'Source',
-  //           url: 'https://github.com/Tlmader/chess-bot'
-  //         }
-  //       ]
-  //     }
-  //   ]
-  // },
-  // {
-  //   title: 'Glyphic Heroes',
-  //   description: 'A competitive match 3 game built with the Unity. Players must line up glyphs to attack opponents' +
-  //   'and defend themselves.',
-  //   image: null,
-  //   sections: [
-  //     {
-  //       name: 'Built With',
-  //       items: [
-  //         'C#',
-  //         'Unity 3D'
-  //       ]
-  //     },
-  //     {
-  //       name: 'Links',
-  //       links: [
-  //         {
-  //           label: 'Download',
-  //           url: 'https://spaces.hightail.com/space/FIXaH'
-  //         },
-  //         {
-  //           label: 'Source',
-  //           url: 'https://github.com/Tlmader/glyphic-heroes'
-  //         }
-  //       ]
-  //     }
-  //   ]
-  // },
-  // {
-  //   title: 'Endless Runner',
-  //   description: 'An endless runner game built with Unreal Engine 4.',
-  //   image: null,
-  //   sections: [
-  //     {
-  //       name: 'Built With',
-  //       items: [
-  //         'Unreal Engine 4'
-  //       ]
-  //     },
-  //     {
-  //       name: 'Links',
-  //       links: [
-  //         {
-  //           label: 'Download',
-  //           url: 'https://spaces.hightail.com/space/eaQmn'
-  //         },
-  //         {
-  //           label: 'Source',
-  //           url: 'https://github.com/Tlmader/endless-runner'
-  //         }
-  //       ]
-  //     }
-  //   ],
-  // },
+  {
+    title: 'Chess Bot',
+    description: 'This project provides a model of the state space of chess and a simple chess-playing bot that explores that space efficiently and decides what moves to make to defeat other bots. This uses a chess framework and tests against bots by Stephen G. Ware.',
+    image: 'images/chess-bot.gif',
+    thumb: 'images/chess-bot-thumb.gif',
+    sections: [
+      {
+        name: 'Built With',
+        items: [
+          'Java'
+        ]
+      },
+      {
+        name: 'Links',
+        links: [
+          {
+            label: 'Play now!',
+            url: 'https://tlmader.github.io/projects/theodoric'
+          },
+          {
+            label: 'Source',
+            url: 'https://github.com/Tlmader/chess-bot'
+          }
+        ]
+      }
+    ]
+  },
+  {
+    title: 'Glyphic Heroes',
+    description: 'A competitive match 3 game built with the Unity. Players must line up glyphs to attack opponents' +
+    'and defend themselves.',
+    image: null,
+    sections: [
+      {
+        name: 'Built With',
+        items: [
+          'C#',
+          'Unity 3D'
+        ]
+      },
+      {
+        name: 'Links',
+        links: [
+          {
+            label: 'Download',
+            url: 'https://spaces.hightail.com/space/FIXaH'
+          },
+          {
+            label: 'Source',
+            url: 'https://github.com/Tlmader/glyphic-heroes'
+          }
+        ]
+      }
+    ]
+  },
+  {
+    title: 'Endless Runner',
+    description: 'An endless runner game built with Unreal Engine 4.',
+    image: null,
+    sections: [
+      {
+        name: 'Built With',
+        items: [
+          'Unreal Engine 4'
+        ]
+      },
+      {
+        name: 'Links',
+        links: [
+          {
+            label: 'Download',
+            url: 'https://spaces.hightail.com/space/eaQmn'
+          },
+          {
+            label: 'Source',
+            url: 'https://github.com/Tlmader/endless-runner'
+          }
+        ]
+      }
+    ],
+  },
 ];
 
 export default data;

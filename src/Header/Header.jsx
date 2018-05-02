@@ -11,7 +11,7 @@ export default class Header extends Component {
           src="images/avatar.jpg"
           size={128}/>
         <h3>Ted Mader</h3>
-        <p>Web Developer • Gamer • Design Hobbyist</p>
+        <p>Web Developer • Gamer • Creative Hobbyist</p>
       </div>
     );
   }
