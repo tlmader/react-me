@@ -70,10 +70,11 @@ export default class Details extends Component {
             </div>
             <div className="details-body__item">
               <div className="details-body__image-container">
-                <img
-                  src={this.props.tile.image}
-                  alt="tile"
-                />
+                {
+                  this.props.tile.image
+                    ? <img src={this.props.tile.image} alt="tile" />
+                    : null
+                }
               </div>
             </div>
           </div>
