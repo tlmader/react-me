@@ -4,6 +4,7 @@ const data = [
     description: 'A group project by the UNO Advanced Game Development class of Spring 2016: a 2D beat \'em up built ' +
     'with Unity!',
     image: 'images/honest-abe.png',
+    thumb: 'images/honest-abe-thumb.png',
     sections: [
       {
         name: 'Built With',
@@ -54,6 +55,7 @@ const data = [
     title: 'Theodoric',
     description: 'A 2D top-down action RPG built with the Phaser HTML5 game framework.',
     image: 'images/theodoric.jpg',
+    thumb: 'images/theodoric-thumb.jpg',
     sections: [],
     links: [
       {

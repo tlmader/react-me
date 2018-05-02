@@ -33,9 +33,9 @@ export default class Home extends Component {
       <div className="home">
         <Details
           close={this.closeDetails}
-          tile={this.state.selectedTile}/>
-        <Grid
-          selectTile={this.selectTile}/>
+          tile={this.state.selectedTile}
+        />
+        <Grid selectTile={this.selectTile} />
       </div>
     );
   }

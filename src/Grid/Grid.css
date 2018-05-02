@@ -1,3 +1,18 @@
-.tile {
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1024px;
+    margin: auto;
+}
+
+.card {
+    margin: 1rem;
+    height: 250px;
+    width: 300px;
     box-shadow: 0 0 0.5rem 0 gray;
+}
+
+.card__media {
+    height: 250px;
 }
