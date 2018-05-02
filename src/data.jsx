@@ -17,7 +17,6 @@ const data = [
           'Komplete',
           'Behaviour Machine'
         ],
-        links: []
       },
       {
         name: 'Role',
@@ -25,26 +24,24 @@ const data = [
           'Programming',
           'Development Lead'
         ],
-        links: []
       },
       {
         name: 'Links',
-        items: [],
         links: [
           {
-            text: 'Windows desktop 64-bit',
+            label: 'Windows desktop 64-bit',
             url: 'https://build.cloud.unity3d.com/share/ZkMWaNQDf-/'
           },
           {
-            text: 'Mac desktop 64-bit',
+            label: 'Mac desktop 64-bit',
             url: 'https://build.cloud.unity3d.com/share/ZkMWaNQDf-/'
           },
           {
-            text: 'Campus News Article!',
+            label: 'Campus News Article!',
             url: 'http://www.uno.edu/campus-news/2016/Game-On-UNO-Video-Game-Development-Concentration-Simulates-Real-World-Experience.aspx'
           },
           {
-            text: 'Source',
+            label: 'Source',
             url: 'https://github.com/uno-game-dev/honest-abe'
           }
         ]
@@ -56,21 +53,25 @@ const data = [
     description: 'A 2D top-down action RPG built with the Phaser HTML5 game framework.',
     image: 'images/theodoric.jpg',
     thumb: 'images/theodoric-thumb.jpg',
-    sections: [],
-    links: [
+    sections: [
       {
-        text: 'Play in browser!',
-        url: 'projects/theodoric'
+        name: 'Built With',
+        items: [
+          'JavaScript',
+          'HTML Canvas',
+          'Phaser'
+        ]
       },
       {
-        text: 'Download',
-        url: 'https://spaces.hightail.com/space/GGXk0'
-      },
-      {
-        text: 'Source',
-        url: 'https://github.com/Tlmader/theodoric'
+        name: 'Links',
+        links: [
+          {
+            label: 'Source',
+            url: 'https://github.com/tlmader/theodoric'
+          }
+        ]
       }
-    ]
+    ],
   },
   {
     title: 'Chess Bot',
@@ -81,7 +82,7 @@ const data = [
     sections: [],
     links: [
       {
-        text: 'Source',
+        label: 'Source',
         url: 'https://github.com/Tlmader/chess-bot'
       }
     ]
@@ -94,11 +95,11 @@ const data = [
     sections: [],
     links: [
       {
-        text: 'Download',
+        label: 'Download',
         url: 'https://spaces.hightail.com/space/FIXaH'
       },
       {
-        text: 'Source',
+        label: 'Source',
         url: 'https://github.com/Tlmader/glyphic-heroes'
       }
     ]
@@ -110,11 +111,11 @@ const data = [
     sections: [],
     links: [
       {
-        text: 'Download',
+        label: 'Download',
         url: 'https://spaces.hightail.com/space/eaQmn'
       },
       {
-        text: 'Source',
+        label: 'Source',
         url: 'https://github.com/Tlmader/endless-runner'
       }
     ]

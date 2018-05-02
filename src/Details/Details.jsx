@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Chip, Divider, IconButton, Paper, Subheader } from 'material-ui';
+import { Chip, FlatButton, IconButton, Paper, Subheader } from 'material-ui';
 
 import './Details.css';
 
@@ -9,12 +9,14 @@ export default class Details extends Component {
       ? (
         <Paper
           className="details"
-          rounded={false}>
+          rounded={false}
+        >
           <div className="details-header">
             <div className="details-header__item">
               <IconButton
                 iconClassName="material-icons"
-                onClick={this.props.close}>
+                onClick={this.props.close}
+              >
                 close
               </IconButton>
             </div>
@@ -31,15 +33,18 @@ export default class Details extends Component {
                 this.props.tile.sections.map(section => {
                   return (
                     <div
-                      key={section.name}>
+                      key={section.name}
+                    >
                       <h2 className="section-name">{section.name}</h2>
-                      <div className="divider"/>
+                      <div className="divider" />
                       <div className="chip-wrapper">
                         {
-                          section.items.map(item => (
+                          section.items
+                          && section.items.map(item => (
                             <div
                               className="chip-wrapper__chip"
-                              key={item}>
+                              key={item}
+                            >
                               <Chip>
                                 {item}
                               </Chip>
@@ -47,15 +52,14 @@ export default class Details extends Component {
                           ))
                         }
                         {
-                          section.links.map(link => (
-                            <div
-                              className="chip-wrapper__chip"
-                              key={link.text}>
-                              <a
-                                href={link.url}>
-                                {link.text}
-                              </a> |
-                            </div>
+                          section.links
+                          && section.links.map(link => (
+                            <FlatButton
+                              key={link.label}
+                              href={link.url}
+                              label={link.label}
+                              primary={true}
+                            />
                           ))
                         }
                       </div>
@@ -66,8 +70,10 @@ export default class Details extends Component {
             </div>
             <div className="details-body__item">
               <div className="details-body__image-container">
-                <img src={this.props.tile.image}
-                     alt="tile"/>
+                <img
+                  src={this.props.tile.image}
+                  alt="tile"
+                />
               </div>
             </div>
           </div>

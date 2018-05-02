@@ -1,4 +1,5 @@
 .details {
+    margin-bottom: 2rem;
 }
 
 .hidden-container {
@@ -9,6 +10,7 @@
 .hidden-container__item {
     flex: 1;
     max-width: 1024px;
+    margin-top: 1rem;
 }
 
 .title,
@@ -29,7 +31,7 @@
 .divider {
     height: 0.75rem;
     width: 3rem;
-    border-top: 0.2rem solid cornflowerblue;
+    border-top: 0.2rem solid rgb(0, 188, 212);
 }
 
 .details-header {
@@ -43,21 +45,26 @@
 
 .details-body {
     display: flex;
+    align-items: center;
     justify-content: center;
+    padding-bottom: 4rem;
+}
+
+@media only screen and (max-width: 900px) {
+    .details-body {
+        flex-direction: column-reverse;
+    }
 }
 
 .details-body__item {
     max-width: 512px;
     flex: 1;
     padding: 0 2rem;
-    margin-bottom: 4rem;
 }
 
 .details-body__image-container {
     display: flex;
     align-items: center;
-    width: 512px;
-    height: 384px;
     overflow: hidden;
     padding: 0.5rem;
 }
